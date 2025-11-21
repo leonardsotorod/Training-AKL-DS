@@ -9,6 +9,8 @@ jobs:
       contents: read
     steps:
       - name: Fetch dynamic secrets from Akeyless
+        env:
+          NODE_TLS_REJECT_UNAUTHORIZED: '0'
         id: fetch-dynamic-secrets
         uses: akeyless-community/akeyless-github-action@v1.0.1
         with:
