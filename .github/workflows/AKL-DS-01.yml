@@ -14,6 +14,7 @@ jobs:
         id: fetch-dynamic-secrets
         uses: akeyless-community/akeyless-github-action@v1.0.1
         with:
+          # Description Only
           access-id: '${{ secrets.ACCESS_ID }}'
           dynamic-secrets: |
             - name: "/Github_Actions/Github-PG-Dynamic-Secret"
